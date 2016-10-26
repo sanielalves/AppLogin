@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".TelaLoginSQLite">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Logon SQLite"
+                android:textSize="40dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Usuário"
+                android:background="@drawable/modelo"
+                android:textColor="#000000"
+                android:padding="20dp"
+                android:ems="10"
+                android:id="@+id/logonUsuario" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/modelo"
+                android:padding="20dp"
+                android:hint="Sua senha"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:id="@+id/logonSenha" />
+
+            <Button
+                android:text="Logar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAcessar"
+                android:onClick="acaoBotaoAcessar"/>
+
+            <TextView
+                android:text="Não tem conta? Clique aqui!"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="#101010"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSignup"
+                android:paddingTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+<!--
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp"
+                android:text="Logon"
+                android:textSize="50dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuário"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/logonUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Joãozinho"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Senha"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/logonSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="abc123"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"/>
+
+
+            <Button
+                android:id="@+id/btnAcessar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:onClick="acaoBotaoAcessar"
+                android:text="Acessar ListaAgenda" />
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:text="Não tenho tela_cadastro_sqlite!" />
+
+
+
+-->

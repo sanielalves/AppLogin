@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.android.saniel.cadastrodeusuario">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TelaCadastroMysql"/>
+
+        <activity android:name=".TelaLoginMysql" />
+
+        <activity android:name=".TelaLoginSQLite" />
+
+        <activity
+            android:name=".TelaCadastroSQLite"
+            android:label="Tela Cadastro SQLite" />
+
+        <activity
+            android:name=".ListaAgenda"
+            android:label="Logado na agenda" />
+
+        <activity
+            android:name=".FormularioAgenda"
+            android:label="@string/title_activity_formulario_agenda"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

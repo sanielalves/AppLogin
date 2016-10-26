@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tela_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Escolha qual banco deseja utilizar..."
+                android:textSize="22dp"
+                android:paddingTop="30dp"/>
+
+            <Button
+                android:id="@+id/bancoSqlite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usar banco SQLite"
+                android:padding="30dp"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/bancoMysql"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usar banco Mysql"
+                android:padding="30dp"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

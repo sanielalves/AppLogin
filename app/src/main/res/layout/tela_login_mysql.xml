@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".TelaLoginSQLite">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tela_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:text="Logon Mysql"
+                android:textSize="40dp"/>
+
+            <EditText
+                android:id="@+id/editEmail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/modelo"
+                android:ems="10"
+                android:hint="E_mail"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editSenha1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/modelo"
+                android:ems="10"
+                android:hint="Sua senha"
+                android:inputType="textPassword"
+                android:padding="20dp" />
+
+            <Button
+                android:id="@+id/btnLogar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logar" />
+
+            <TextView
+                android:id="@+id/txtCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="Não tem conta? Clique aqui!"
+                android:textColor="#101010" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
